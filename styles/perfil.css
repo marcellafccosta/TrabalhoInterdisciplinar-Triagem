@@ -1,0 +1,104 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+
+    background-color: #0F2229;
+}
+
+.exit {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.logo_top {
+    height: 80px;
+    margin-top: -8px;
+    margin-left: 90%;
+}
+
+#sair{
+    margin-top: -1px;
+}
+
+.home {
+    padding: 10px 0;
+    background-color: #0F2229;
+    margin-top: 18%;
+    margin-bottom: 20px;
+    border-radius: 12px; 
+}
+
+.home_icon {
+    text-decoration: none;
+}
+
+.new_icon {
+    text-decoration: none;
+}
+
+.profile_icon {
+    text-decoration: none;
+}
+
+.posicao_atual {
+    background-color: red;
+    border-radius: 12px;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+h5 {
+  margin-left: 46%;
+    margin-top: 3%
+}
+
+.posicao {
+    font-size: 70px;
+    color: whitesmoke;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+
+.perfil {
+
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.botao {
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.cadastro {
+    border-radius: 12px;
+}
+
+main{
+    padding: 10px 22%;
+
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/771e0cbfe9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/sintomas.css" media="screen" />
+    <title>Healthy Track</title>
+    <link rel="shortcut icon" href="../assets/logoredonda.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/224654d41a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/LOGO.jpeg" alt="Bootstrap" width="100" height="60">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <a class="exit fa-solid fa-arrow-right-from-bracket fa-xl" id="sair" style="color: #ffffff;">
+                    </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bootstrap -->
+
+    <main>
+        <script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.42394" type="text/javascript"></script>
+        <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.42394" type="text/javascript"></script>
+        <script src="https://cdn03.jotfor.ms/js/payments/validategateways.js?v=3.3.42394"
+            type="text/javascript"></script>
+        <script type="text/javascript">	JotForm.newDefaultTheme = true;
+            JotForm.extendsNewTheme = false;
+            JotForm.singleProduct = false;
+            JotForm.newPaymentUIForNewCreatedForms = true;
+            JotForm.newPaymentUI = true;
+            JotForm.clearFieldOnHide = "disable";
+            JotForm.submitError = "jumpToFirstError";
+
+            JotForm.init(function () {
+                /*INIT-START*/
+                JotForm.alterTexts({ "ageVerificationError": "Você deve ter mais de {minAge} anos para enviar este formulário.", "alphabetic": "Este campo pode conter apenas letras", "alphanumeric": "Este campo só pode conter letras e números.", "appointmentSelected": "Você selecionou {time} em {date}", "ccDonationMinLimitError": "Valor mínimo é {minAmount} {currency}", "ccInvalidCVC": "Single Product w/ Single Choice Orders", "ccInvalidExpireDate": "Data de expiração inválida.", "ccInvalidExpireMonth": "Expiration month is invalid.", "ccInvalidExpireYear": "Expiration year is invalid.", "ccInvalidNumber": "Número do cartão de crédito é inválido.", "ccMissingDetails": "Please fill up the credit card details.", "ccMissingDonation": "Insira valores numéricos para o montante de doação.", "ccMissingProduct": "Por favor, selecione pelo menos um produto.", "characterLimitError": "Muitos caracteres. O limite é de", "characterMinLimitError": "Muito poucos caracteres. O mínimo é", "confirmClearForm": "Tem certeza de que deseja limpar este formulário?", "confirmEmail": "E-mail não confere", "currency": "Este campo apenas admite valores monetários.", "cyrillic": "Este campo aceita apenas caracteres cirilicos.", "dateInvalid": "Esta data não é válida. O formato da data é {format}", "dateInvalidSeparate": "Esta data não é válido. Insira um válido {element}.", "dateLimited": "Esta data não está disponível.", "disallowDecimals": "Por favor insira um número inteiro.", "doneButton": "Concluído", "doneMessage": "Muito bem! Todos os erros foram corrigidos.", "dragAndDropFilesHere_infoMessage": "Arraste e solte arquivos aqui", "email": "Digite um endereço de e-mail válido.", "fillMask": "Valor do campo deve preencher máscara.", "freeEmailError": "Não são permitidas contas de e-mail gratuitas", "generalError": "O formulário contém erros. Por favor, corrija todos os erros antes de continuar.", "generalPageError": "Há erros nesta página. Por favor, corrija-os antes de continuar.", "geoNotAvailableDesc": "Location provider not available. Please enter the address manually.", "geoNotAvailableTitle": "Position Unavailable", "geoPermissionDesc": "Check your browser's privacy settings.", "geoPermissionTitle": "Permission Denied", "geoTimeoutDesc": "Please check your internet connection and try again.", "geoTimeoutTitle": "Timeout", "gradingScoreError": "Pontuação total deve ser menor ou igual a", "incompleteFields": "Há campos obrigatórios incompletos. Por favor, preencha-os.", "inputCarretErrorA": "Não pode ser menor que o valor mínimo:", "inputCarretErrorB": "A entrada não deveria ser maior que o valor máximo:", "lessThan": "A sua pontuação deve ser inferior ou igual a", "maxDigitsError": "O numero máximo de caracteres permitidos são", "maxFileSize_infoMessage": "Tamanho máx.", "maxSelectionsError": "The maximum number of selections allowed is ", "minSelectionsError": "O número mínimo de seleções exigido é", "multipleError": "Existem {count} erros nesta página. Corrija-os antes de prosseguir.", "multipleFileUploads_emptyError": "{file} está vazio, por favor selecione os arquivos de novo.", "multipleFileUploads_fileLimitError": "São permitidos somente {fileLimit} uploads de arquivos", "multipleFileUploads_minSizeError": "{file} é muito pequeno, o tamanho mínimo do arquivo é {minSizeLimit}.", "multipleFileUploads_onLeave": "O upload de arquivos está em andamento. Se você sair agora, o envio será cancelado.", "multipleFileUploads_sizeError": "{file} é muito grande, o tamanho máximo é {sizeLimit}.", "multipleFileUploads_typeError": "O arquivo {file} é inválido, pois somente as extensões {extensions} são permitidas.", "multipleFileUploads_uploadFailed": "File upload failed, please remove it and upload the file again.", "nextButtonText": "Next", "noSlotsAvailable": "Nenhum horário disponível", "noUploadExtensions": "File has no extension file type (e.g. .txt, .png, .jpeg)", "numeric": "Este campo pode conter apenas números", "oneError": "Existe {count} erro nesta página. Corrija-o antes de prosseguir.", "pastDatesDisallowed": "A data não pode ser passada.", "pleaseWait": "Por favor, aguarde...", "prevButtonText": "Previous", "progressMiddleText": "of", "required": "Este campo é obrigatório.", "requiredLegend": "Todos os campos marcados com * são obrigatórios e devem ser preenchidos.", "requireEveryCell": "Toda célula é requisitada.", "requireEveryRow": "Todos os campos são requeridos.", "requireOne": "Pelo menos um campo é requisitado.", "restrictedDomain": "This domain is not allowed", "reviewBackText": "Back to Form", "reviewSubmitText": "Review and Submit", "seeAllText": "See All", "seeErrorsButton": "Ver Erros", "slotUnavailable": "{time} on {date} has been selected is unavailable. Please select another slot.", "submissionLimit": "Sorry! Only one entry is allowed.  Multiple submissions are disabled for this form.", "submitButtonText": "Submit", "uploadExtensions": "Somente é possível fazer upload dos seguintes arquivos:", "uploadFilesize": "O tamanho do arquivo não pode ser maior que:", "uploadFilesizemin": "O ficheiro não pode ser menor que:", "url": "Este campo apenas pode conter um URL válido", "validateEmail": "You need to validate this e-mail", "wordLimitError": "Demasiadas palavras. O limite é de", "wordMinLimitError": "Poucas palavras. O mínimo é" });
+                FormTranslation.init({ "detectUserLanguage": "1", "firstPageOnly": "0", "options": "Português", "originalLanguage": "pt", "primaryLanguage": "pt", "saveUserLanguage": "1", "showStatus": "flag-with-nation", "theme": "light-theme", "version": "2" });
+                /*INIT-END*/
+            });
+
+            JotForm.prepareCalculationsOnTheFly([null, { "name": "triagemDa", "qid": "1", "text": "Triagem da Medica", "type": "control_head" }, { "name": "enviar", "qid": "2", "text": "Enviar", "type": "control_button" }, null, null, null, null, { "name": "nosUltimos", "qid": "7", "text": "Nos ultimos 14 dias, voce ja experimentou ou tem experimentado algum dos seguintes sintomas?", "type": "control_checkbox" }, { "name": "peloO", "qid": "8", "text": "Pelo o que voce sabe, nos ultimos 14 dias, voce entrou em contato com uma pessoa que poderia estar com COVID positivo?", "type": "control_radio" }, { "name": "voceTem", "qid": "9", "text": "Voce tem alguma condicao de saude preexistente, como diabetes, doenca pulmonar ou doenca cardiaca?", "type": "control_radio" }]);
+            setTimeout(function () {
+                JotForm.paymentExtrasOnTheFly([null, { "name": "triagemDa", "qid": "1", "text": "Triagem da Medica", "type": "control_head" }, { "name": "enviar", "qid": "2", "text": "Enviar", "type": "control_button" }, null, null, null, null, { "name": "nosUltimos", "qid": "7", "text": "Nos ultimos 14 dias, voce ja experimentou ou tem experimentado algum dos seguintes sintomas?", "type": "control_checkbox" }, { "name": "peloO", "qid": "8", "text": "Pelo o que voce sabe, nos ultimos 14 dias, voce entrou em contato com uma pessoa que poderia estar com COVID positivo?", "type": "control_radio" }, { "name": "voceTem", "qid": "9", "text": "Voce tem alguma condicao de saude preexistente, como diabetes, doenca pulmonar ou doenca cardiaca?", "type": "control_radio" }]);
+            }, 20); 
+        </script>
+        <style type="text/css">
+            @media print {
+                .form-section {
+                    display: inline !important
+                }
+
+                .form-pagebreak {
+                    display: none !important
+                }
+
+                .form-section-closed {
+                    height: auto !important
+                }
+
+                .page-section {
+                    position: initial !important
+                }
+            }
+        </style>
+        <link type="text/css" rel="stylesheet"
+            href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.42394" />
+        <link type="text/css" rel="stylesheet"
+            href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.42394" />
+        <link type="text/css" rel="stylesheet"
+            href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.42394" />
+        <form class="jotform-form" action="https://submit.jotform.com/submit/231528807679671" method="post"
+            name="form_231528807679671" id="231528807679671" accept-charset="utf-8" autocomplete="on"><input
+                type="hidden" name="formID" value="231528807679671" /><input type="hidden" id="JWTContainer"
+                value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+            <div role="main" class="form-all">
+                <link type="text/css" rel="stylesheet" media="all"
+                    href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.42394" />
+                <div class="cont"><input type="text" id="input_language" name="input_language" style="display:none" />
+                    <div class="language-dd" id="langDd" style="display:none">
+                        <div class="dd-placeholder lang-emp">Language</div>
+                        <ul class="lang-list dn" id="langList">
+                            <li data-lang="pt" class="pt">Português</li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript" src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.42394"></script>
+                <ul class="form-section page-section">
+                    <li id="cid_1" class="form-input-wide" data-type="control_head">
+                        <div class="form-header-group  header-large">
+                            <div class="header-text httal htvam">
+                                <h1 id="header_1" class="form-header" data-component="header">Triagem da Médica</h1>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="form-line" data-type="control_radio" id="id_8"><label
+                            class="form-label form-label-top form-label-auto" id="label_8" for="input_8"> Pelo o que
+                            você sabe, nos últimos 14 dias, você entrou em contato com uma pessoa que poderia estar com
+                            COVID positivo? </label>
+                        <div id="cid_8" class="form-input-wide" data-layout="full">
+                            <div class="form-multiple-column" data-columncount="2" role="group"
+                                aria-labelledby="label_8" data-component="radio"><span class="form-radio-item"><span
+                                        class="dragger-item"></span><input type="radio" aria-describedby="label_8"
+                                        class="form-radio" id="input_8_0" name="q8_peloO" value="Sim" /><label
+                                        for="input_8_0">Sim</label></span><span
+                                    class="form-radio-item"><span class="dragger-item"></span><input type="radio"
+                                        aria-describedby="label_8" class="form-radio" id="input_8_1" name="q8_peloO"
+                                        value="Não" /><label id="label_input_8_1" for="input_8_1">Não</label></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="form-line" data-type="control_checkbox" id="id_7"><label
+                            class="form-label form-label-top form-label-auto" id="label_7" for="input_7"> Nos últimos 14
+                            dias, você já experimentou ou tem experimentado algum dos seguintes sintomas? </label>
+                        <div id="cid_7" class="form-input-wide" data-layout="full">
+                            <div class="form-multiple-column" data-columncount="2" role="group"
+                                aria-labelledby="label_7" data-component="checkbox"><span
+                                    class="form-checkbox-item"><span class="dragger-item"></span><input type="checkbox"
+                                        aria-describedby="label_7" class="form-checkbox" id="input_7_0"
+                                        name="q7_nosUltimos[]" value="Tosse" /><label id="label_input_7_0" id="tosse"
+                                        for="input_7_0">Tosse</label></span><span class="form-checkbox-item"><span
+                                        class="dragger-item"></span><input type="checkbox" aria-describedby="label_7"
+                                        class="form-checkbox" id="input_7_1" name="q7_nosUltimos[]"
+                                        value="Falta de Ar" /><label id="label_input_7_1" for="input_7_1">Falta de
+                                        Ar</label></span><span class="form-checkbox-item" style="clear:left"><span
+                                        class="dragger-item"></span><input type="checkbox" aria-describedby="label_7"
+                                        class="form-checkbox" id="input_7_2" name="q7_nosUltimos[]"
+                                        value="Dor de Garganta" /><label id="label_input_7_2" for="input_7_2">Dor de
+                                        Garganta</label></span><span class="form-checkbox-item"><span
+                                        class="dragger-item"></span><input type="checkbox" aria-describedby="label_7"
+                                        class="form-checkbox" id="input_7_3" name="q7_nosUltimos[]"
+                                        value="Febre" /><label id="label_input_7_3"
+                                        for="input_7_3">Febre</label></span><span class="form-checkbox-item"
+                                    style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                        aria-describedby="label_7" class="form-checkbox" id="input_7_4"
+                                        name="q7_nosUltimos[]" value="Dor de Cabeça" /><label id="label_input_7_4"
+                                        for="input_7_4">Dor de Cabeça</label></span><span
+                                    class="form-checkbox-item"><span class="dragger-item"></span><input type="checkbox"
+                                        aria-describedby="label_7" class="form-checkbox" id="input_7_5"
+                                        name="q7_nosUltimos[]" value="Perda do Olfato ou do Paladar" /><label
+                                        id="label_input_7_5" for="input_7_5">Perda do Olfato ou do
+                                        Paladar</label></span><span class="form-checkbox-item" style="clear:left"><span
+                                        class="dragger-item"></span><input type="checkbox" aria-describedby="label_7"
+                                        class="form-checkbox" id="input_7_6" name="q7_nosUltimos[]"
+                                        value="Sente Calafrios" /><label id="label_input_7_6" for="input_7_6">Sente
+                                        Calafrios</label></span><span class="form-checkbox-item"><span
+                                        class="dragger-item"></span><input type="checkbox" aria-describedby="label_7"
+                                        class="form-checkbox" id="input_7_7" name="q7_nosUltimos[]"
+                                        value="Dores Musculares ou Dores no Corpo" /><label id="label_input_7_7"
+                                        for="input_7_7">Dores Musculares ou Dores no Corpo</label></span><span
+                                    class="form-checkbox-item" style="clear:left"><span
+                                        class="dragger-item"></span><input type="checkbox" aria-describedby="label_7"
+                                        class="form-checkbox" id="input_7_8" name="q7_nosUltimos[]"
+                                        value="Vômitos" /><label id="label_input_7_8"
+                                        for="input_7_8">Vômitos</label></span><span class="form-checkbox-item"><span
+                                        class="dragger-item"></span><input type="checkbox" aria-describedby="label_7"
+                                        class="form-checkbox" id="input_7_9" name="q7_nosUltimos[]"
+                                        value="Fadiga" /><label id="label_input_7_9"
+                                        for="input_7_9">Fadiga</label></span><span class="form-checkbox-item"
+                                    style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                        aria-describedby="label_7" class="form-checkbox" id="input_7_10"
+                                        name="q7_nosUltimos[]" value="Diarréia" /><label id="label_input_7_10"
+                                        for="input_7_10">Diarréia</label></span></div>
+                        </div>
+                    </li>
+                    <li class="form-line" data-type="control_radio" id="id_9"><label
+                            class="form-label form-label-top form-label-auto" id="label_9" for="input_9"> Você tem
+                            alguma condição de saúde preexistente, como diabetes, doença pulmonar ou doença cardíaca?
+                        </label>
+                        <div id="cid_9" class="form-input-wide" data-layout="full">
+                            <div class="form-multiple-column" data-columncount="2" role="group"
+                                aria-labelledby="label_9" data-component="radio"><span class="form-radio-item"><span
+                                        class="dragger-item"></span><input type="radio" aria-describedby="label_9"
+                                        class="form-radio" id="input_9_0" name="q9_voceTem" value="Sim" /><label
+                                        id="label_input_9_0" for="input_9_0">Sim</label></span><span
+                                    class="form-radio-item"><span class="dragger-item"></span><input type="radio"
+                                        aria-describedby="label_9" class="form-radio" id="input_9_1" name="q9_voceTem"
+                                        value="Não" /><label id="label_input_9_1" for="input_9_1">Não</label></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="form-line" data-type="control_button" id="id_2">
+                        <div id="cid_2" class="form-input-wide" data-layout="full">
+                            <div data-align="auto"
+                                class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button
+                                    id="input_2" type="submit"
+                                    class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+                                    data-component="button" data-content="">Enviar</button></div>
+                        </div>
+                    </li>
+                    <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+                </ul>
+            </div>
+            <script>
+                JotForm.showJotFormPowered = "new_footer";
+            </script>
+            <script>
+                JotForm.poweredByText = "Powered by Jotform";
+            </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc"
+                value="231528807679671" />
+            <script type="text/javascript">
+                var all_spc = document.querySelectorAll("form[id='231528807679671'] .si" + "mple" + "_spc");
+                for (var i = 0; i < all_spc.length; i++) {
+                    all_spc[i].value = "231528807679671-231528807679671";
+                }
+            </script>
+        </form>
+        <script type="text/javascript">JotForm.ownerView = true;</script>
+        <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.42394"></script>
+        <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.42394"></script>
+    </main>
+
+    <div class="home">
+        <a class="home_icon fa-solid fa-house fa-xl" href="../views/posicao.html" style="color: #ffffff;"></a>
+        <a class="new_icon fa-solid fa-square-plus fa-xl" href="../views/sintomas.html" style="color: #ffffff;"></a>
+        <a class="profile_icon fa-solid fa-user fa-xl" href="../views/perfil.html" style="color: #ffffff;"></a>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Login Handler -->
+    <script  type="module">
+        import { calcularPrioridade } from '../javascript/handler/sintomas/sintomasHandler.js';
+
+        document.querySelector('form').addEventListener('submit', (event) => {
+            event.preventDefault(); 
+
+            const pontuacao = {
+                contato: document.getElementById('input_8_0')?.checked ? 2 : 0,
+                febre: document.getElementById('input_7_3')?.checked ? 1 : 0,
+                tosse: document.getElementById('input_7_0')?.checked ? 1 : 0,
+                faltaAr: document.getElementById('input_7_1')?.checked ? 2 : 0,
+                dorGarganta: document.getElementById('input_7_2')?.checked ? 1 : 0,
+                dorCabeca: document.getElementById('input_7_4')?.checked ? 1 : 0,
+                dorCorpo: document.getElementById('input_7_7')?.checked ? 1 : 0,
+                diarreia: document.getElementById('input_7_10')?.checked ? 1 : 0,
+                hereditaria: document.getElementById('input_9_0')?.checked ? 1 : 0,
+                vomitos: document.getElementById('input_7_8')?.checked ? 1 : 0,
+                fadiga: document.getElementById('input_7_9')?.checked ? 1 : 0,
+                calafrios: document.getElementById('input_7_6')?.checked ? 1 : 0,
+                perdaolfpal: document.getElementById('input_7_5')?.checked ? 1 : 0,
+            };
+
+            calcularPrioridade(pontuacao);
+        });
+    </script>
+</body>
+
+</html>

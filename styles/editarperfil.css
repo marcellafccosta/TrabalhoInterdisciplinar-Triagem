@@ -1,0 +1,87 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+header {
+    background-color: #0F2229;
+}
+
+main{
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.exit {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.home {
+    background-color: #0F2229;
+    padding: 10px 10px;
+    width: 250px;
+    border-radius: 12px;
+    margin: 15px auto;
+}
+
+.home_icon{
+    margin-left: 10%;
+    text-decoration: none;
+}
+
+.new_icon {
+    text-decoration: none;
+    margin-left: 25%;
+}
+
+.profile_icon {
+    margin-left: 25%;
+    text-decoration: none;
+}
+
+.posicao_atual {
+    background-color: red;
+    border-radius: 12px;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.posicao {
+    font-size: 70px;
+    color: whitesmoke;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+.botao {
+    width: 100%;
+    margin-top: 30px;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+.cadastro {
+    border-radius: 12px;
+    padding: 20px 20px;
+}
+
+.form-label{
+    padding: 4px;
+}
+

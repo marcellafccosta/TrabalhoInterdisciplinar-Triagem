@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/posicao.css" media="screen" />
+    <title>Healthy Track</title>
+    <link rel="shortcut icon" href="../assets/logoredonda.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/224654d41a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/LOGO.jpeg" alt="logo" width="60" height="60">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <a class="exit fa-solid fa-arrow-right-from-bracket fa-xl" href="../views/index.html" id="sair"
+                        style="color: #ffffff;"></a>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h5>Posição atual</h5>
+        <div class="posicao_atual" id="posicao_atual">
+            <div class="posicao" id="posicao">13°</div>
+            <p class="hospital">Hospital Israelita Albert Einstein</p>
+        </div>
+    </main>
+
+    <div class="home">
+        <a class="home_icon fa-solid fa-house fa-xl" href="../views/posicao.html" style="color: #ffffff;"></a>
+        <a class="new_icon fa-solid fa-square-plus fa-xl" href="../views/sintomas.html" style="color: #ffffff;"></a>
+        <a class="profile_icon fa-solid fa-user fa-xl" href="../views/perfil.html" style="color: #ffffff;"></a>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Fila Handler -->
+    <script type="module">
+        import { renderUserInformationsInQueue } from '../javascript/handler/queue/filaHandler.js';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            renderUserInformationsInQueue();
+        });
+
+    </script>
+
+</body>
+
+</html>

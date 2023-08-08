@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../styles/cadastro.css" media="screen" />
+    <title>Healthy Track</title>
+    <link rel="shortcut icon" href="../assets/logoredonda.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="cadastro container">
+            <form class="row g-3" id="form-register">
+                <h3>Criar conta</h3>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email: <a style="color:red">*</a></label>
+                        <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="nome@exemplo.com"
+                            required/>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputPassword" class="form-label">Senha: <a style="color:red">*</a></label>
+                        <input type="password" class="form-control" name="inputPassword" id="inputPassword"
+                            aria-describedby="passwordHelpBlock" placeholder="Ex: ATH2309" 
+                            required/>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="inputName" class="form-label">Nome: <a style="color:red">*</a></label>
+                        <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Ex: José" minlength="3" 
+                            required/>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="inputCep" class="form-label">Cep <a style="color:red">*</a></label>
+                        <input type="text" class="form-control" name="inputCep" id="inputCep" size="10" maxlength="9" onblur="pesquisacep(this.value);" 
+                            required/>
+                    </div>
+
+                    <div class="col-md-7">
+                        <label for="inputRua" class="form-label">Rua <a style="color:red">*</a></label>
+                        <input type="text" class="form-control" name="inputRua" id="inputRua" size="60" 
+                            required/>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label for="inputNumeroCasa" class="form-label">Número <a style="color:red">*</a></label>
+                        <input type="text" class="form-control" name="inputNumeroCasa" id="inputNumeroCasa" placeholder="Número" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputBairro" class="form-label">Bairro <a style="color:red">*</a></label>
+                        <input type="text" class="form-control" name="inputBairro" id="inputBairro" size="40" 
+                            required/>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCidade" class="form-label">Cidade <a style="color:red">*</a></label>
+                        <input type="text" class="form-control" name="inputCidade" id="inputCidade" size="40" 
+                            required/>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputEstado" class="form-label">Estado <a style="color:red">*</a></label>
+                        <input type="text" class="form-control" name="inputEstado" id="inputEstado" size="2" minlength="2" maxlength="2"
+                            required/>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCpf" class="form-label">CPF: <a style="color:red">*</a></label>
+                        <input type="text" name="inputCpf" class="form-control" id="inputCpf" placeholder="Cadastro de Pessoa Física" minlength="11" maxlength="11"
+                            required/>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputDtNascimento" class="form-label">Data de Nascimento <a
+                                style="color:red">*</a></label>
+                        <input type="date" class="form-control" name="inputDtNascimento" id="inputDtNascimento" placeholder="Data de Nascimento"
+                            required/>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="selectConvenio" class="form-label">Convênio <a style="color:red">*</a></label>
+                        <select class="form-select" name="selectConvenio" id="selectConvenio" required>
+                            <option selected>Opções</option>
+                            <option value="Unimed">Unimed</option>
+                            <option value="Bradesco">Bradesco</option>
+                            <option value="MedSenior">MedSenior</option>
+                            <option value="Amil">Amil</option>
+                            <option value="Allianz">Allianz</option>
+                            <option value="Sicoob">Sicoob</option>
+                            <option value="Porto Seguro">Porto Seguro</option>
+                            <option value="Atendimento pelo SUSAtendimento pelo SUS">Atendimento pelo SUS</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="inputNumeroID" class="form-label">Número de Identificação <a style="color:red">*</a></label>
+                        <input type="text" class="form-control" name="inputNumeroID" id="inputNumeroID"  placeholder="Nº de Identificação"
+                            required/>
+                    </div>
+
+                    <div class="col-12 mb-0">
+                        <button type="submit" name="btn-register" id="btn-register" style="background-color:#0F2229; border-color: #0F2229;"
+                            class="botao btn btn-secondary">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <!--JQUERY import-->    
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+
+    <!--API viacep-->
+    <script src="../javascript/service/requestViaCepApi.js"></script>
+
+    <!-- Register Handler -->
+    <script type="module">
+        import { register } from '../javascript/handler/user/registerHandler.js';
+
+        document.querySelector('form').addEventListener('submit', (event) => {
+            register(event);
+        });
+    </script>
+</body>
+
+</html>

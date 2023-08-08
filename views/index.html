@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css" media="screen" />
+  <link rel="shortcut icon" href="../assets/logoredonda.png" type="image/x-icon">
+  <title>Healthy Track</title>
+</head>
+
+<body>
+
+  <main>
+
+    <section>
+      <div class="container">
+        <div class="row login-conteiner">
+
+          <div class="col-md-8" id="imglogo">
+            <img src="../assets/O_melhor_para_voce-removebg-preview.png" alt="" width="300px">
+          </div>
+
+          <div class="col-md-4">
+            <h2 class="welcome-title">Seja bem-vindo!</h2>
+
+            <form>
+              <div class="mb-3">
+                <label for="login" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="login" placeholder="nome@exemplo.com"
+                  aria-describedby="emailHelp">
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" class="form-control" placeholder="Senha" id="password">
+              </div>
+
+              <div class="mb-3">
+                <a class="col-md-6" href="../views/esquecisenha.html" id="btn-esqueci-minha-senha">Esqueci minha
+                  senha</a>
+                <a class="col-md-6" href="cadastro.html">Cadastrar</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary col-md-12"
+                style="background-color: #0F2229; border-color: #0F2229;">Entrar</button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Login Handler -->
+  <script type="module">
+    import { login } from '../javascript/handler/user/loginHandler.js';
+
+    document.querySelector('form').addEventListener('submit', (event) => {
+      login(event);
+    });
+  </script>
+
+</html>

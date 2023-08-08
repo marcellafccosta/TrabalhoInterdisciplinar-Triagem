@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Tracker</title>
+    <link href="../styles/listagem.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/224654d41a.js" crossorigin="anonymous"></script>
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../assets/logoredonda.png" type="image/x-icon">
+    <!--Sweet Alert-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js"></script>
+    <!-- Include the Dark theme -->
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/LOGO.jpeg" alt="Bootstrap" width="60" height="60">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <a class="exit fa-solid fa-arrow-right-from-bracket fa-xl" href="../views/index.html" id="sair"
+                        style="color: #ffffff;">
+                    </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="listagem">
+            <h3>
+                Hospitais cadastrados
+                <a href="../views/cadastroHospitais.html">
+                    <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; width: 40px; background-color: #0F2229; color: white; border-color: #0F2229;">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </a>
+            </h3>
+        </div>
+
+        <section id="main-conteiner"></section> <!-- Render Hospitais-->
+
+    </main>
+
+    <div class="home">
+        <a class="home_icon fa-solid fa-house fa-xl" href="../views/posicao.html" style="color: #ffffff;"></a>
+        <a class="new_icon fa-solid fa-square-plus fa-xl" href="../views/sintomas.html" style="color: #ffffff;"></a>
+        <a class="profile_icon fa-solid fa-user fa-xl" href="../views/perfil.html" style="color: #ffffff;"></a>
+    </div>
+
+    <!--link bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- Listagem Hospitais Handler -->
+    <script type="module">
+        import { loadHospitaisInformations } from '../javascript/handler/hospitais/renderHospitalHandler.js';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            loadHospitaisInformations();
+        });
+
+    </script>
+
+</body>
+
+</html>

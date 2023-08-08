@@ -1,0 +1,44 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #0F2229;
+}
+
+main {
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+header{
+    background-color: whitesmoke;
+    height: 54px;
+}
+
+.logo_tipo{
+    margin-top: -13px;
+}
+
+.logo_exit{
+    margin-top: -20px;
+}
+
+.cadastro {
+    background-color: whitesmoke;
+    display: flex;
+    place-items: center;
+    border-radius: 12px;
+    margin-top: 7px;
+    padding: 20px 20px;
+}
+
+.botao {
+    width: 100%;
+    margin-top: 10px;
+}
+
+

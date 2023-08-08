@@ -1,0 +1,32 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #0F2229;
+    padding: 0 30%;
+}
+
+
+@media (max-width: 800px) {
+    body {
+        padding: 0 10%;
+    }
+
+}
+
+.esqueci {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 150px;
+    padding: 50px 40px;
+}
+
+.botao {
+    width: 100%;
+}

@@ -1,0 +1,82 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: #0F2229;
+}
+
+main {
+    padding: 10px 12%;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+.exit {
+    text-decoration: none;
+}
+
+.paciente-container {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.home {
+    background-color: #0F2229;
+    padding: 10px 10px;
+    width: 250px;
+    border-radius: 12px;
+    margin: 15px auto;
+}
+
+.home_icon{
+    margin-left: 10%;
+    text-decoration: none;
+}
+
+.new_icon {
+    text-decoration: none;
+    margin-left: 25%;
+}
+
+.profile_icon {
+    margin-left: 25%;
+    text-decoration: none;
+}
+
+.hospitalUm {
+    background-color: rgb(199, 199, 199);
+    margin-top: 1%;
+    border-radius: 12px;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hospital1 {
+    text-decoration: none;
+    color: black;
+    flex-grow: 1;
+    word-break: break-word;
+}
+
+.xizinho,
+.certinho,
+.exclamacaozinha {
+    text-decoration: none;
+    color: #0F2229;
+    margin-right: 10px;
+}
